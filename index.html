@@ -5,33 +5,86 @@
 <title>Coursera</title>
 <link rel="stylesheet" href="css/styles.css">
 <style>
+  @font-face {
+    font-family: 'Merriweather';
+    src: url("https://d3njjcbhbojbot.cloudfront.net/web/type/merriweather/Merriweather-Regular.eot");
+    src: url("https://d3njjcbhbojbot.cloudfront.net/web/type/merriweather/Merriweather-Regular.eot?#iefix") format('embedded-opentype'),
+         url("https://d3njjcbhbojbot.cloudfront.net/web/type/merriweather/Merriweather-Regular.woff2") format('woff2'),
+         url("https://d3njjcbhbojbot.cloudfront.net/web/type/merriweather/Merriweather-Regular.woff") format('woff'),
+         url("https://d3njjcbhbojbot.cloudfront.net/web/type/merriweather/Merriweather-Regular.ttf") format('truetype'),
+         url("https://d3njjcbhbojbot.cloudfront.net/web/type/merriweather/Merriweather-Regular.svg#Merriweather-Regular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .row.head {
+    height: 75px;
+  }
   section ul {
     margin: 10px 25px 0 20px;
   }
   section ul li {
     margin: 5px 0;
   }
+  section h3{
+    height:80px;
+    font-weight: bold;
+    padding: 35px 0 0 120px;
+    font-size: 15px;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: 5px;
+  }
+
+  section {
+    border :1px solid #f1f1f1;
+    border-radius: 5px;
+    min-height: 230px;
+    margin:0 30px 15px 0;
+  }
+  .no-assignments {
+    color: #888;
+    line-height:30px;
+    padding-top: 40px;
+  }
+  .html5 {
+    background-image: url('images/html-css-js.jpeg');
+  }
+  .angular {
+    background-image: url('images/angular.png');
+  }
+  .capstone {
+    background-image: url('images/capstone.jpeg');
+  }
 </style>
 </head>
 <body>
-<h1>Coursera Assignments</h1>
+  <div class="row head">
+    <div class="col-lg-12 col-md-12"><img src="images/coursera.svg"></div>
+  </div>
 
 <div class="row">
-  <section class="col-lg-4 col-md-6">
-    <h3>HTML, CSS, and Javascript for Web Developers</h3>
+  <section class="col-lg-5 col-md-5">
+    <h3 class="html5">HTML, CSS, and Javascript for Web Developers</h3>
       <ul>
+        <li><a href="#" title="Module 1 assignment">Module 1 assignment</a></li>
         <li><a href="html5/module-2.html" title="Module 2 assignment">Module 2 assignment</a></li>
         <li><a href="html5/module-3.html" title="Module 3 assignment">Module 3 assignment</a></li>
         <li><a href="html5/module-4/index.html" title="Module 4 assignment">Module 4 assignment</a></li>
         <li><a href="html5/module-5/index.html" title="Module 5 assignment">Module 5 assignment</a></li>
       </ul>
   </section>
-
-  <section class="col-lg-4 col-md-6">
-    <h3>Single Page Web Applications with AngularJS</h3>
+  <section class="col-lg-5 col-md-5">
+    <h3 class="angular">Single Page Web Applications with AngularJS</h3>
       <ul>
         <li><a href="angular/module-1/index.html" title="Module 1 assignment">Module 1 assignment</a></li>
       </ul>
+  </section>
+</div>
+
+<div class="row">
+  <section class="col-lg-5 col-md-5">
+    <h3 class="capstone">Capstone: Photo Tourist Web Application</h3>
+    <p class="no-assignments">No assignments so far...</p>
   </section>
 </div>
 
