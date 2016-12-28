@@ -6,7 +6,12 @@
   font-size: 14px;
   font-family: 'Merriweather', Arial, Verdana, serif;
 }
-
+a, a:link {
+  color: #1b809e;
+}
+a:visited, a:hover {
+  color: #394079;
+}
 h1 {
   font-size: 1.75em;
   text-align: center;
