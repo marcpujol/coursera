@@ -9,7 +9,6 @@ angular.module('NarrowItDownApp', [])
 NarrowItDownController.$inject = ['MenuSearchService'];
 function NarrowItDownController(MenuSearchService) {
   var list = this;
-  var criteria = null;
   list.criteria = null;
   list.found = null;
 
