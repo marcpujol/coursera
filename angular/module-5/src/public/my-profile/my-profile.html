@@ -1,0 +1,40 @@
+<div class="container" ng-if="myprofileCtrl.info.favoriteItem.short_name">
+    <h1>My profile</h1>
+    <br/>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-3 col-xxs-3">First name</div>
+      <div>{{ myprofileCtrl.info.first_name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-3 col-xxs-3">Last name</div>
+      <div>{{ myprofileCtrl.info.last_name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-3 col-xxs-3">Email</div>
+      <div>{{ myprofileCtrl.info.email }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-3 col-xxs-3">Phone</div>
+      <div>{{ myprofileCtrl.info.phone }}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 col-xs-3 col-xxs-3">Favorite dish</div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6 col-xxs-6">
+      <div class="menu-item-photo">
+        <div>{{myprofileCtrl.info.favoriteItem.short_name}}</div>
+        <img class="img-responsive" width="250" height="150" ng-src="{{myprofileCtrl.baseUrl}}/images/{{myprofileCtrl.info.favoriteItem.short_name}}.jpg" alt="{{myprofileCtrl.info.favoriteItem.name}}">
+      </div>
+    </div>
+    <div class="menu-item-description col-md-5 col-sm-5 col-xs-6 col-xxs-6">
+      <h3 class="menu-item-title">{{myprofileCtrl.info.favoriteItem.name}}</h3>
+      <p class="menu-item-details">{{myprofileCtrl.info.favoriteItem.description}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" ng-if="!myprofileCtrl.info.favoriteItem">
+  <p>Not Signed Up Yet. <a href="#" ui-sref="public.signup" title="Sign up Now!">Sign up Now!</a></p>
+</div>
